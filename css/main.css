@@ -1,6 +1,6 @@
 
 /* set the font size to 10px on html, so you can use rem as a relative messurement */
-html{  font-size: 62.5%;} figure{  margin:0}
+html{  font-size: 10px;} figure{  margin:0}
 /* deja la pagina inicial fija y sin scroll */
 body{  font-size: 1.5rem;
 position: fixed;
@@ -39,15 +39,56 @@ align-items: center;
 header section .icon-menu span{
   color:white;
 }
-header .logo-container{
 
-}
 header .logo-container .logo{
   /* height: 9rem; */
   box-sizing: content-box;
   height:100%;
+  margin-left:25%;
+ }
+ .logo{
+   width: 20rem;
+   
  }
  header .about-link-container{
   margin-right: 5rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  text-decoration: underline;
  }
+ main{
+   background-image: url("https://www.globbit.com/wp-content/uploads/2019/12/Tendencias-en-tecnologia.jpg");
+   background-size: cover;
+   background-position: center center;
+   height:100%;
+   width:100%;
+   display:flex;
+   justify-content:center;
+   align-items: center;
+ }
+ /* buttom */
+ main  .btn{
+  
+  border:none;
+  width: 15rem;
+  
+  height:3rem;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-weight: bold;
+ 
+  margin-bottom:1rem;
+ /* nice buttom */
+ border-radius: 5px;
+ color:white;
+ background-color: #47cfac;
+  
+}
+main  .btn:hover{
+animation-name: background-color;
+animation-duration: 500ms;
+animation-fill-mode: forwards;
+}
+@keyframes background-color{
+  100% {
+    background-color: #0a990a;
+  }
+}
