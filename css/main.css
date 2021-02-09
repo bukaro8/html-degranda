@@ -1,6 +1,13 @@
+/* fonts from google  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+/* ----------------------------------------------- 
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
 
+ ---------------------------------------------- */
 /* set the font size to 10px on html, so you can use rem as a relative messurement */
-html{  font-size: 10px;} figure{  margin:0}
+html{  font-size: 10px; font-family:'Roboto Mono', monospace;} figure{  margin:0}
 /* deja la pagina inicial fija y sin scroll */
 body{  font-size: 1.5rem;
 position: fixed;
@@ -54,6 +61,7 @@ header .logo-container .logo{
   margin-right: 5rem;
   font-size: 2rem;
   text-decoration: underline;
+  
  }
  main{
    background-image: url("https://images.wallpapersden.com/image/download/astronaut-skull-space-suit_bGZlaG6UmZqaraWkpJRobWllrWdma2U.jpg");
@@ -106,10 +114,12 @@ main section {
 }
 
 .main-text{
-  font-size:5.2rem;
-  width:50%;
+  font-size:4.5rem;
+  width:80%;
+  font-weight: 700;
+  letter-spacing: 10px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 .index-main:nth-of-type(1){
   grid-area: 1/2
@@ -117,8 +127,8 @@ main section {
 
 @media screen and (max-width: 1462px){
   .main-text{
-    font-size:3.5rem;
-    width:60%;
+    font-size:4rem;
+    width:100%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -127,7 +137,9 @@ main section {
   }
 }
 @media screen and (max-width: 568px){
-  .main-text{
-    width: 90%;
+  
   }
 }
+/* end of index.css start of blog.css------------------------------------------------
+-------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------*/
