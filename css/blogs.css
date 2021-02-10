@@ -314,6 +314,10 @@ main .blog-content-item-image{
     flex-direction: column;
     height: auto;
   }
+  .blog-post-container {
+    display: block;
+    width: 80vw;
+  }
 }
 
 

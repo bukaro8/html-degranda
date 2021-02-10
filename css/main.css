@@ -140,4 +140,33 @@ main section {
   
   }
 }
-
+@media screen and (max-width:950px){
+  header .icon-bar{
+    justify-content:center;
+  }
+  header nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  header .logo-container .logo {
+    margin-left: 0;
+  }
+  header .about-link-container {
+    margin: 0;
+  }
+  main .news-container{
+    width: 90%;
+  }
+  main .blog-contact-container{
+    flex-direction: column;
+    height:auto;
+  }
+  main .blog-contact-item{
+    margin:1rem 0 2rem 0;
+    width:initial;
+  }
+  footer{
+    flex-direction: column;
+    height: auto;
+  }
+}
