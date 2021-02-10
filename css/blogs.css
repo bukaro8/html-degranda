@@ -8,15 +8,18 @@ font-family: 'Roboto Slab', serif;
 
  ---------------------------------------------- */
 /* set the font size to 10px on html, so you can use rem as a relative messurement */
-html{  font-size: 10px; font-family:'Roboto Mono', monospace;} figure{  margin:0}
+html{  width:100vw; font-size: 10px; font-family:'Roboto Mono', monospace; } figure{  margin:0}
 /* deja la pagina inicial fija y sin scroll */
-body{  font-size: 1.5rem;
+body{  font-size: 1.5rem; width: 100vw;
+  
 } 
 a{text-decoration: none; color:black;}
 header{
   height:14rem;
   display:grid;
   grid-template-rows: 5rem 9rem;
+  width:100vw;
+  
 }
 header .icon-bar{ 
   display: flex;
@@ -48,6 +51,7 @@ header .logo-container .logo{
   box-sizing: content-box;
   height:100%;
   margin-left:25%;
+  
  }
  .logo{
    width: 20rem;
@@ -57,6 +61,7 @@ header .logo-container .logo{
   margin-right: 5rem;
   font-size: 2rem;
   text-decoration: underline;
+  
   
  }
  .btn{
@@ -199,11 +204,103 @@ footer{
   height: 5rem;
  
  display:flex;
- justify-content: center;
+flex-direction: row;
+ justify-content: space-around;
  align-items: center;
   border-top:3rem solid  #47cfac;
+  flex-wrap: wrap;
 }
+footer div{
+  display:flex;
+  flex-direction: row;
+  color:white
+ }
+ footer div span{
+   margin-left: 10px;
+  
+ }
 
+ footer div span a{
+  color:white
+ }
+ /* -----------------------------css for blog-------------------------------------------- */
+.blog-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ main .blog-main-image-container{
+  width: 90%;
+  text-align: center;
+}
+ main .blog-main-image{
+   width: 75%;
+   }
+main .news-container{
+  width:70%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  text-align: justify;
+  margin-bottom: 5%;
+}
+main .news-container h3{
+  align-self: flex-start;
+}
+main .news-container hr{
+  width: 100%;
+}
+main .blog-contact-container{
+  display:flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(224,227,234);
+  height: 25vh;
+  flex-wrap: nowrap;
+  }
+main .blog-contact-item{
+  display: flex;
+  width:50%;
+  justify-content: center;
+  align-items: center;
+  
+ }
+.box-details{
+  margin:0;
+  max-width: 30rem;
+}
+main .blog-contact-item p{
+ 
+  margin:0;
+  
+  
+}
+main .blog-content-item-image{
+  width: 100%;
+}
+.blog-content-item-image-container{
+  width:10% ;
+  margin-right: 1rem;
+  
+}
+@media screen and (max-width:950px){
+  header .icon-bar{
+    justify-content:center;
+  }
+  header nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  header .logo-container .logo {
+    margin-left: 0;
+  }
+  header .about-link-container {
+    margin: 0;
+  }
+  
+}
 
 
 
