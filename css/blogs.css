@@ -318,6 +318,26 @@ main .blog-content-item-image{
     display: block;
     width: 80vw;
   }
+  .blog-news-container{
+    display:flex;
+    flex-direction: column;
+    
+  }
+  .blog-news-picture-container{
+    text-align: center;
+  }
+  .blog-main-article{
+    align-items:  center;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width:670px){
+  .center-footer {
+    flex-direction: column;
+    align-items: center;
+    
+}
 }
 
 
